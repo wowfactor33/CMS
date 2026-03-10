@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitri Mendeleev - The Father of the Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-left: 5px solid #007acc;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007acc;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #007acc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            top: 22px;
+        }
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -15px;
+            border-width: 10px 0 10px 15px;
+            border-color: transparent transparent transparent white;
+        }
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="scientist_dude.html">Home</a>
+        <a href="early_life.html">Early Life</a>
+        <a href="periodic_table.html">The Periodic Table</a>
+        <a href="legacy.html">Legacy</a>
+    </nav>
+    
+    <h1>Dmitri Ivanovich Mendeleev</h1>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMU9Dgw_mHYAgRbjsxyZvckvkklo-59ir0w&s" alt="Portrait of Dmitri Mendeleev" style="width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    
+    <p>Dmitri Mendeleev (1834–1907) was a Russian chemist and inventor. He is best known for formulating the Periodic Law and creating the first version of the periodic table of elements.</p>
+    
+    <h2>The Periodic Table</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Periodic_table_large.svg/400px-Periodic_table_large.svg.png" alt="Periodic Table">
+    <p>In 1869, Mendeleev published his periodic table, arranging elements by atomic weight and predicting the existence of undiscovered elements. His work revolutionized chemistry and earned him worldwide recognition.</p>
+    
+    <h2>Timeline of Key Events</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1834</h3>
+                <p>Born in Tobolsk, Siberia, Russia.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1850</h3>
+                <p>Moves to Moscow to attend gymnasium.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1855</h3>
+                <p>Enters the Main Pedagogical Institute in St. Petersburg.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1869</h3>
+                <p>Publishes the first periodic table of elements.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1871</h3>
+                <p>Predicts properties of unknown elements like gallium and scandium.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>1907</h3>
+                <p>Dies in St. Petersburg at age 72.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
